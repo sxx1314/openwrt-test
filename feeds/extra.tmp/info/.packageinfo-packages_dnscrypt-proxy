@@ -1,0 +1,42 @@
+Source-Makefile: feeds/extra/packages/dnscrypt-proxy/Makefile
+Package: dnscrypt-proxy
+Submenu: IP Addresses and Names
+Version: 1.4.0-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: libsodium
+Section: net
+Category: Network
+Title: A tool for securing communications between a client and a DNS resolver
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: dnscrypt-proxy-1.4.0.tar.bz2
+Type: ipkg
+Description: 	dnscrypt-proxy provides local service which can be used directly as your local resolver or as a DNS forwarder, encrypting and authenticating requests using the DNSCrypt protocol and passing them to an upstream server.
+	The DNSCrypt protocol uses high-speed high-security elliptic-curve cryptography and is very similar to DNSCurve, but focuses on securing communications between a client and its first-level resolver.
+	While not providing end-to-end security, it protects the local network, which is often the weakest point of the chain, against man-in-the-middle attacks. It also provides some confidentiality to DNS queries.
+http://dnscrypt.org/
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+Package: hostip
+Submenu: IP Addresses and Names
+Version: 1.4.0-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: libsodium
+Section: net
+Category: Network
+Title: A tool for resolving a name to IPv4 or IPv6 addresses
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: dnscrypt-proxy-1.4.0.tar.bz2
+Type: ipkg
+Description: 	The DNSCrypt proxy ships with a simple tool named hostip that resolves a name to IPv4 or IPv6 addresses.
+	This tool can be useful for starting some services before dnscrypt-proxy.
+	Queries made by hostip are not authenticated.
+http://dnscrypt.org/
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+

@@ -1,0 +1,19 @@
+Source-Makefile: package/libsodium/Makefile
+Package: libsodium
+Version: 0.4.2-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: library for network communication, encryption, decryption, etc
+Maintainer: Black Roland https://forum.openwrt.org/profile.php?id=82621
+Source: libsodium-0.4.2.tar.gz
+Type: ipkg
+Description: 	A high-speed software library for network communication, encryption,
+	decryption, signatures, etc.
+https://github.com/jedisct1/libsodium
+Black Roland https://forum.openwrt.org/profile.php?id=82621
+@@
+
+

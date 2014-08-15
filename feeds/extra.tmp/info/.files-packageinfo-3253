@@ -1,0 +1,6 @@
+luci/luci-extra
+packages/shadowsocks-libev
+packages/webui-aria2
+packages/yaaw
+packages/dnscrypt-proxy
+libs/libsodium

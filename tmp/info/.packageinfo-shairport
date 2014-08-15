@@ -1,0 +1,19 @@
+Source-Makefile: package/shairport/Makefile
+Package: shairport
+Version: 0.05
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +libopenssl +alsa-lib +libavahi-client +avahi-utils
+Menu-Depends: 
+Provides: 
+Section: sound
+Category: Sound
+Title: ShairPort
+Maintainer: 
+Source: shairport-0.05-6949aef47c071df085d7580309c9779e3fc9fd64.tar.gz
+Type: ipkg
+Description:   ShairPort is server software that implements the RAOP protocol for
+  playback of music streamed from a compatible remote client.
+http://mafipulation.org/
+
+@@
+
+

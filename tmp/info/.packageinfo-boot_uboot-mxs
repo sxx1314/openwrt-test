@@ -1,0 +1,19 @@
+Source-Makefile: package/boot/uboot-mxs/Makefile
+Package: uboot-mxs-mx23_olinuxino
+Version: 2014.07-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread @TARGET_mxs
+Menu-Depends: 
+Provides: 
+Build-Variant: mx23_olinuxino
+Section: boot
+Category: Boot Loaders
+Title: U-Boot 2014.07 for the Olinuxino i.MX233
+Maintainer: Zoltan HERPAI <wigyori@uid0.hu>
+Source: u-boot-2014.07.tar.bz2
+Type: ipkg
+Description: U-Boot 2014.07 for the Olinuxino i.MX233
+http://www.denx.de/wiki/U-Boot
+Zoltan HERPAI <wigyori@uid0.hu>
+@@
+
+

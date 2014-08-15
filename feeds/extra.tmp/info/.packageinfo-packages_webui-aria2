@@ -1,0 +1,19 @@
+Source-Makefile: feeds/extra/packages/webui-aria2/Makefile
+Package: webui-aria2
+Submenu: Download Manager
+Version: 20140302-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +aria2
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: An interface to interact with aria2
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: webui-aria2-20140302-c129b53b13.tar.gz
+Type: ipkg
+Description: 	The aim for this project is to create the worlds best and hottest interface to interact with aria2. Very simple to use.
+https://github.com/ziahamza/webui-aria2
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+

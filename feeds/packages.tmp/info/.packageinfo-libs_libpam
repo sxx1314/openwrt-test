@@ -1,0 +1,36 @@
+Source-Makefile: feeds/packages/libs/libpam/Makefile
+Package: libpam
+Version: 1.1.8-4
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Variant: nodb
+Section: libs
+Category: Libraries
+Title: the Linux-PAM libraries and modules. (no DB support)
+Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
+Source: Linux-PAM-1.1.8.tar.bz2
+Type: ipkg
+Description: 	The Linux-PAM Pluggable Authentication Modules.
+http://www.kernel.org/pub/linux/libs/pam
+Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
+@@
+
+Package: libpam-db
+Version: 1.1.8-4
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +libdb47
+Menu-Depends: 
+Provides: 
+Build-Variant: db
+Section: libs
+Category: Libraries
+Title: the Linux-PAM libraries and modules. (DB support)
+Maintainer: Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
+Source: Linux-PAM-1.1.8.tar.bz2
+Type: ipkg
+Description: the Linux-PAM libraries and modules. (DB support)
+http://www.kernel.org/pub/linux/libs/pam
+Nikos Mavrogiannopoulos <n.mavrogiannopoulos@gmail.com>
+@@
+
+

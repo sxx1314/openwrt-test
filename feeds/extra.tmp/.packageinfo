@@ -1,0 +1,179 @@
+Source-Makefile: feeds/extra/luci/luci-mjpg-streamer/Makefile
+Package: luci-mjpg-streamer
+Submenu: 3. Applications
+Version: git-0215b78-1111
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +PACKAGE_luci-app-aria2:aria2 +PACKAGE_luci-app-aria2:yaaw
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host
+Section: luci
+Category: LuCI
+Title: luci-mjpg-streamer
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: 
+Type: ipkg
+Description: luci-mjpg-streamer
+https://github.com/nanpuyue/openwrt-extra/
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+
+Source-Makefile: feeds/extra/luci/luci-extra/Makefile
+Package: luci-app-aria2
+Submenu: 3. Applications
+Version: git-0215b78-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +PACKAGE_luci-app-aria2:aria2 +PACKAGE_luci-app-aria2:yaaw
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host
+Section: luci
+Category: LuCI
+Title: LuCI Support for Aria2
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: 
+Type: ipkg
+Description: LuCI Support for Aria2
+https://github.com/nanpuyue/openwrt-extra/
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+
+
+
+Source-Makefile: feeds/extra/packages/shadowsocks-libev/Makefile
+Package: shadowsocks-libev
+Version: 1.4.6-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +libopenssl
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Title: Lightweight Secured Socks5 Proxy (OpenSSL)
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Source: shadowsocks-libev-1.4.6.tar.gz
+Type: ipkg
+Description: Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+https://github.com/madeye/shadowsocks-libev
+Max Lv <max.c.lv@gmail.com>
+@@
+
+Package: shadowsocks-libev-polarssl
+Version: 1.4.6-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +libpolarssl
+Menu-Depends: 
+Provides: 
+Build-Variant: polarssl
+Section: net
+Category: Network
+Title: Lightweight Secured Socks5 Proxy (PolarSSL)
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Source: shadowsocks-libev-1.4.6.tar.gz
+Type: ipkg
+Description: Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+https://github.com/madeye/shadowsocks-libev
+Max Lv <max.c.lv@gmail.com>
+@@
+
+
+Source-Makefile: feeds/extra/packages/webui-aria2/Makefile
+Package: webui-aria2
+Submenu: Download Manager
+Version: 20140302-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +aria2
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: An interface to interact with aria2
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: webui-aria2-20140302-c129b53b13.tar.gz
+Type: ipkg
+Description: 	The aim for this project is to create the worlds best and hottest interface to interact with aria2. Very simple to use.
+https://github.com/ziahamza/webui-aria2
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+
+Source-Makefile: feeds/extra/packages/yaaw/Makefile
+Package: yaaw
+Submenu: Download Manager
+Version: 2014-07-12-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread +aria2
+Menu-Depends: 
+Provides: 
+Section: net
+Category: Network
+Title: Yet another aria2 web frontend
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: yaaw-2014-07-12-c23ae2456ec95778651411e5b148b836307f6d8d.tar.gz
+Type: ipkg
+Description: 	Yet Another Aria2 Web Frontend in pure HTML/CSS/Javascirpt.
+https://github.com/binux/yaaw
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+
+Source-Makefile: feeds/extra/packages/dnscrypt-proxy/Makefile
+Package: dnscrypt-proxy
+Submenu: IP Addresses and Names
+Version: 1.4.0-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: libsodium
+Section: net
+Category: Network
+Title: A tool for securing communications between a client and a DNS resolver
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: dnscrypt-proxy-1.4.0.tar.bz2
+Type: ipkg
+Description: 	dnscrypt-proxy provides local service which can be used directly as your local resolver or as a DNS forwarder, encrypting and authenticating requests using the DNSCrypt protocol and passing them to an upstream server.
+	The DNSCrypt protocol uses high-speed high-security elliptic-curve cryptography and is very similar to DNSCurve, but focuses on securing communications between a client and its first-level resolver.
+	While not providing end-to-end security, it protects the local network, which is often the weakest point of the chain, against man-in-the-middle attacks. It also provides some confidentiality to DNS queries.
+http://dnscrypt.org/
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+Package: hostip
+Submenu: IP Addresses and Names
+Version: 1.4.0-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Build-Depends: libsodium
+Section: net
+Category: Network
+Title: A tool for resolving a name to IPv4 or IPv6 addresses
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: dnscrypt-proxy-1.4.0.tar.bz2
+Type: ipkg
+Description: 	The DNSCrypt proxy ships with a simple tool named hostip that resolves a name to IPv4 or IPv6 addresses.
+	This tool can be useful for starting some services before dnscrypt-proxy.
+	Queries made by hostip are not authenticated.
+http://dnscrypt.org/
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+
+Source-Makefile: feeds/extra/libs/libsodium/Makefile
+Package: libsodium
+Menu: 1
+Version: 0.6.1-1
+Depends: +libc +USE_EGLIBC:librt +USE_EGLIBC:libpthread 
+Menu-Depends: 
+Provides: 
+Section: libs
+Category: Libraries
+Title: Portable & packageable NaCl-based crypto library
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: libsodium-0.6.1.tar.gz
+Type: ipkg
+Description: 	NaCl (pronounced "salt") is a new easy-to-use high-speed software library for network communication, encryption, decryption, signatures, etc.
+	NaCl's goal is to provide all of the core operations needed to build higher-level cryptographic tools.
+	Sodium is a portable, cross-compilable, installable, packageable fork of NaCl, with a compatible API.
+https://github.com/jedisct1/libsodium
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+

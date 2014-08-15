@@ -1,0 +1,18 @@
+Source-Makefile: package/exfat-nofuse/Makefile
+Package: kmod-fs-exfat
+Submenu: Filesystems
+Version: <LINUX_VERSION>+1.2.6-a4d3cdab4b7043aa4c9275835123f0471fa1526f
+Depends: +kmod-nls-base
+Menu-Depends: 
+Provides: 
+Section: kernel
+Category: Kernel modules
+Title: EXFAT filesystem support
+Maintainer: 
+Source: exfat-nofuse-1.2.6-a4d3cdab4b7043aa4c9275835123f0471fa1526f.tar.gz
+Type: ipkg
+Description:   Kernel module to exfat native driver leak from Samsung
+
+@@
+
+
